@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SERVICE="sonarr"
-IMAGE="linuxserver/sonarr"
+IMAGE="bluefishforsale/sonarr"
 VERSION="latest"
 LOCALDIR="/data01/services/${SERVICE}"
 DOWNLOADS="/data01/incoming/tv"
