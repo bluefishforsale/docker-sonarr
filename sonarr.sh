@@ -3,7 +3,6 @@
 SERVICE="sonarr"
 IMAGE="linuxserver/sonarr"
 VERSION="latest"
-MY_IP=$(host home.terrac.com | awk '{print $NF}')
 LOCALDIR="/data01/services/${SERVICE}"
 DOWNLOADS="/data01/incoming/tv"
 COMPLETE="/data01/complete/tv"
