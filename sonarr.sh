@@ -7,13 +7,12 @@ LOCALDIR="/data01/services/${SERVICE}"
 DOWNLOADS="/data01/incoming/tv"
 COMPLETE="/data01/complete/tv"
 
-test  -d ${LOCALDIR}  || mkdir -p ${LOCALDIR}
-
 docker stop ${SERVICE}
 docker rm ${SERVICE}
 
 
 sudo docker run -d \
+  --cpus=2 \
   --restart=always \
   --name=${SERVICE} \
   --hostname=${HOSTNAME} \
